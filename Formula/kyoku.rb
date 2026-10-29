@@ -8,7 +8,7 @@
 class Kyoku < Formula
   desc "TUI-first music library manager"
   homepage "https://github.com/balor/kyoku"
-  version "0.2.2"
+  version "0.3.0"
   license "MIT"
 
   # Binaries are not Apple-notarized / code-signed, but files downloaded by
@@ -16,11 +16,11 @@ class Kyoku < Formula
   # Gatekeeper/SmartScreen dance described in the main README.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/balor/kyoku/releases/download/v0.2.2/kyoku-0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "76b01d09015316f7bdbc3b753051e4323719b1b467011a3eb67f377e9bf40fb8"
+      url "https://github.com/balor/kyoku/releases/download/v0.3.0/kyoku-0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4abea9efb8a8ff1082d2db125b866fa6cb56977c971f138c907c5784d48e42c6"
     else
-      url "https://github.com/balor/kyoku/releases/download/v0.2.2/kyoku-0.2.2-x86_64-apple-darwin.tar.gz"
-      sha256 "8fd687812c995b8a56f03810ad05296b1aceff2ff013d292735c90a78d9dbcdb"
+      url "https://github.com/balor/kyoku/releases/download/v0.3.0/kyoku-0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "1e9afe575bbcea626cbe6cca67f349ee95da764290c51f61da0b86c4733181d4"
     end
   end
 
@@ -30,8 +30,8 @@ class Kyoku < Formula
     if Hardware::CPU.arm?
       odie "kyoku has no prebuilt aarch64 Linux binary; use: cargo install kyoku"
     end
-    url "https://github.com/balor/kyoku/releases/download/v0.2.2/kyoku-0.2.2-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "34fc078fac7bce7039c2f192e7dddf79815f3e06b54ce31456f2f1937ee56af8"
+    url "https://github.com/balor/kyoku/releases/download/v0.3.0/kyoku-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "aa485894937879d9b49567a2b868474a495a6c6f9e040f2c603d227503a651c7"
   end
 
   def install
